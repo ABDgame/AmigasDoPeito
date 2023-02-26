@@ -1,5 +1,5 @@
 # Amigas Do Peito
-Site responsivo de uma padaria, adaptado por MQJogos,
+Site responsivo de uma ONG, adaptado por MQJogos,
 desenvolvido com 40.1% de elementos HTML, 48.8% de variáveis CSS e 
 11% de práticas JavaScript.
 #
