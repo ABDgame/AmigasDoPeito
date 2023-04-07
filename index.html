@@ -15,326 +15,847 @@
   <title> Amigas Do Peito </title>
 </head>
 <body>
-   <!-- header section starts  -->
+    <!-- 
+    - PRELOADER
+  -->
 
-<header>
+  <div class="preloader" data-preloader>
+    <div class="circle" data-circle></div>
+  </div>
 
-    <a href="#" class="logo"><span>Amigas</span>DoPeito</a>
 
-    <input type="checkbox" id="menu-bar">
-    <label for="menu-bar" class="fas fa-bars"></label>
 
-    <nav class="navbar">
-        <a href="#home">Início</a>
-        <a href="#features">Cardápio</a>
-        <a href="#about">Sobre Nós</a>
-        <a href="#review">Depoimentos</a>
-        <a href="#pricing">Preços</a>
-        <a href="#contact">Fale Conosco</a>
-    </nav>
 
-</header>
 
-<!-- header section ends -->
+  <!-- 
+    - #HEADER
+  -->
 
-<!-- home section starts  -->
+  <header class="header" data-header>
+    <div class="container">
 
-<section class="home" id="home">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="145" height="27" alt="Youdemi home">
+      </a>
 
-    <div class="content">
-        <h3> Delícias da Soso </span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit porro nam libero natus error consequatur sed repudiandae eos quo?</p>
-        <a href="#" class="btn">download now</a>
-    </div>
+      <nav class="navbar" data-navbar>
 
-    <div class="image">
-        <img src="images/home-img.png" alt="">
-    </div>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="145" height="27" alt="Youdemi home">
+          </a>
 
-</section>
-
-<!-- home section ends -->
-
-<!-- features section starts  -->
-
-<section class="features" id="features">
-
-    <h1 class="heading"> app features </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/f-icon1.png" alt="">
-            <h3>amazing UI design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-            <a href="#" class="btn">read more</a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
         </div>
 
-        <div class="box">
-            <img src="images/f-icon2.png" alt="">
-            <h3> Delícias da Soso </h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-            <a href="#" class="btn">read more</a>
-        </div>
+        <ul class="navbar-list">
 
-        <div class="box">
-            <img src="images/f-icon3.png" alt="">
-            <h3> Delícias da Soso </h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
-            <a href="#" class="btn">read more</a>
-        </div>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-sm" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-sm" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-sm" data-nav-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-sm" data-nav-link>Contacts</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">Start Free Trial</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
 
     </div>
+  </header>
 
-</section>
 
-<!-- features section ends -->
 
-<!-- about section starts  -->
 
-<section class="about" id="about">
 
-    <h1 class="heading"> sobre a Delícias da Soso </h1>
+  <main>
+    <article>
 
-    <div class="column">
+      <!-- 
+        - #HERO
+      -->
 
-        <div class="image">
-            <img src="images/about-img.png" alt="">
-        </div>
+      <section class="section hero has-bg-image" aria-labelledby="hero-label"
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
 
-        <div class="content">
-            <h3> Delícias da Soso </h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat deserunt saepe repudiandae veniam soluta minima dolor hic aperiam iure.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quaerat. Dolorem ratione saepe magni quo inventore porro ab voluptates eos, nam eius provident accusantium, quia similique est, repellendus et reiciendis.</p>
-            <div class="buttons">
-                <a href="#" class="btn"> <i class="fab fa-apple"></i> app store </a>
-                <a href="#" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
+          <div class="hero-content">
+
+            <h1 class="headline-lg" id="hero-label">
+              Better <span class="span">Learning Future</span> Starts With Youdemi
+            </h1>
+
+            <p class="title-md has-before">
+              It is long established fact that reader distracted by the readable content.
+            </p>
+
+            <div class="btn-group">
+              <a href="#" class="btn btn-primary">Get Started Now</a>
+
+              <a href="#" class="btn btn-secondary">Get Started Now</a>
             </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="590" height="620" alt="hero banner" class="w-100">
+          </figure>
+
         </div>
+      </section>
 
-    </div>
 
-</section>
 
-<!-- about section ends -->
 
-<!-- newsletter  -->
 
-<div class="newsletter">
+      <!-- 
+        - #CATEGORY
+      -->
 
-    <h3Inscreva-se para receber o cardápio</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed aliquam quibusdam neque magni magnam est laborum doloribus, facere dolores.</p>
-    <form action="">
-        <input type="email" placeholder="enter your email">
-        <input type="submit" value="Subscribe">
-    </form>
+      <section class="section category has-bg-image" aria-labelledby="category-label"
+        style="background-image: url('./assets/images/category-bg.png')">
+        <div class="container">
 
-</div>
+          <p class="title-sm text-center section-subtitle" id="category-label">Course Categories</p>
 
-<!-- review section starts  -->
+          <h2 class="headline-md text-center section-title">
+            Browse Top <span class="span has-after">Categories</span>
+          </h2>
 
-<section class="review" id="review">
+          <ul class="grid-list">
 
-    <h1 class="heading"> people's review </h1>
+            <li>
+              <div class="card category-card">
 
-    <div class="box-container">
-
-        <div class="box">
-            <i class="fas fa-quote-right"></i>
-            <div class="user">
-                <img src="images/pic1.png" alt="">
-                <h3>john deo</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                <div class="card-icon">
+                  <img src="./assets/images/category-1.svg" width="72" height="72" loading="lazy"
+                    alt="Data Science icon">
                 </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+
+                <div>
+                  <h3 class="title-lg">Data Science</h3>
+
+                  <p class="title-sm">68 Courses</p>
                 </div>
-            </div>
+
+                <a href="#" class="layer-link" aria-label="Data Science Category"></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-2.svg" width="72" height="72" loading="lazy"
+                    alt="UI/UX Design icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">UI/UX Design</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="UI/UX Design Category"></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-3.svg" width="72" height="72" loading="lazy"
+                    alt="Modern Physics icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">Modern Physics</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="Modern Physics Category"></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-4.svg" width="72" height="72" loading="lazy"
+                    alt="Music Production icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">Music Production</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="Music Production Category"></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-5.svg" width="72" height="72" loading="lazy"
+                    alt="Data Science icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">Data Science</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="Data Science Category"></a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card category-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/category-6.svg" width="72" height="72" loading="lazy" alt="Finances icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg">Finances</h3>
+
+                  <p class="title-sm">68 Courses</p>
+                </div>
+
+                <a href="#" class="layer-link" aria-label="Finances Category"></a>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">View All Categories</a>
+
         </div>
+      </section>
 
-        <div class="box">
-            <i class="fas fa-quote-right"></i>
-            <div class="user">
-                <img src="images/pic2.png" alt="">
-                <h3>john deo</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="775" height="685" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="title-sm section-subtitle" id="about-label">About Youdemi</p>
+
+            <h2 class="headline-md section-title">
+              We Provide The Best Online <span class="span has-after">Education</span>
+            </h2>
+
+            <p class="title-sm section-text">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour.
+            </p>
+
+            <ul class="progress-list">
+
+              <li>
+                <div class="progress-label-wrapper">
+                  <p class="title-sm">Business Studies</p>
+
+                  <p class="title-sm">86%</p>
                 </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+
+                <div class="progress">
+                  <div class="progress-fill red"></div>
                 </div>
-            </div>
-        </div>
+              </li>
 
-        <div class="box">
-            <i class="fas fa-quote-right"></i>
-            <div class="user">
-                <img src="images/pic3.png" alt="">
-                <h3>john deo</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+              <li>
+                <div class="progress-label-wrapper">
+                  <p class="title-sm">Marketing</p>
+
+                  <p class="title-sm">67%</p>
                 </div>
-                <div class="comment">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+
+                <div class="progress">
+                  <div class="progress-fill green"></div>
                 </div>
-            </div>
-        </div>
+              </li>
 
-    </div>
+              <li>
+                <div class="progress-label-wrapper">
+                  <p class="title-sm">Design & Development</p>
 
-</section>
+                  <p class="title-sm">95%</p>
+                </div>
 
-<!-- review section ends -->
+                <div class="progress">
+                  <div class="progress-fill yellow"></div>
+                </div>
+              </li>
 
-<!-- pricing section starts  -->
-
-<section class="pricing" id="pricing">
-
-    <h1 class="heading"> Our Pricing Plans </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3 class="title">basic</h3>
-            <div class="price">$10<span>/monthly</span></div>
-            <ul>
-                <li> <i class="fas fa-check"></i> 1000+ downloads </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-times"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> 5 downloads </li>
             </ul>
-            <a href="#" class="btn">check out</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COURSE
+      -->
+
+      <section class="section course has-bg-image" aria-labelledby="course-label"
+        style="background-image: url('./assets/images/course-bg.png')">
+        <div class="container">
+
+          <p class="title-sm section-subtitle text-center">Featured Courses</p>
+
+          <h2 class="headline-md section-title text-center" id="course-label">
+            Choose Unlimited <span class="span has-after">Courses</span>
+          </h2>
+
+          <ul class="grid-list">
+
+            <li class="card-container">
+              <div class="card course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/course-1.png" width="370" height="248" loading="lazy"
+                    alt="Basic Fundamentals of Interior & Graphics Design" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+
+                    <p class="title-lg card-price">$29.28</p>
+
+                    <div class="rating-wrapper">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                    </div>
+
+                  </div>
+
+                  <h3 class="title-lg card-title">
+                    Basic Fundamentals of Interior & Graphics Design
+                  </h3>
+
+                  <div class="card-meta wrapper">
+
+                    <p class="title-sm">
+                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">2 Lessons</span>
+                    </p>
+
+                    <p class="title-sm">
+                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">4k Students</span>
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <a href="#" class="layer-link"
+                  aria-label="Course Details, Basic Fundamentals of Interior & Graphics Design"></a>
+
+              </div>
+            </li>
+
+            <li class="card-container">
+              <div class="card course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/course-2.png" width="370" height="248" loading="lazy"
+                    alt="Increasing Engagement with Instagram & Facebook" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+
+                    <p class="title-lg card-price">Free</p>
+
+                    <div class="rating-wrapper">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                    </div>
+
+                  </div>
+
+                  <h3 class="title-lg card-title">
+                    Increasing Engagement with Instagram & Facebook
+                  </h3>
+
+                  <div class="card-meta wrapper">
+
+                    <p class="title-sm">
+                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">2 Lessons</span>
+                    </p>
+
+                    <p class="title-sm">
+                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">4k Students</span>
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <a href="#" class="layer-link"
+                  aria-label="Course Details, Increasing Engagement with Instagram & Facebook"></a>
+
+              </div>
+            </li>
+
+            <li class="card-container">
+              <div class="card course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/course-3.png" width="370" height="248" loading="lazy"
+                    alt="Introduction to Color Theory & Basic UI/UX" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+
+                    <p class="title-lg card-price">$72.39</p>
+
+                    <div class="rating-wrapper">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                    </div>
+
+                  </div>
+
+                  <h3 class="title-lg card-title">
+                    Introduction to Color Theory & Basic UI/UX
+                  </h3>
+
+                  <div class="card-meta wrapper">
+
+                    <p class="title-sm">
+                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">2 Lessons</span>
+                    </p>
+
+                    <p class="title-sm">
+                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">4k Students</span>
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <a href="#" class="layer-link"
+                  aria-label="Course Details, Introduction to Color Theory & Basic UI/UX"></a>
+
+              </div>
+            </li>
+
+            <li class="card-container">
+              <div class="card course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/course-4.png" width="370" height="248" loading="lazy"
+                    alt="Financial Security Thinking and Principles Theory" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+
+                    <p class="title-lg card-price">$72.39</p>
+
+                    <div class="rating-wrapper">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                    </div>
+
+                  </div>
+
+                  <h3 class="title-lg card-title">
+                    Financial Security Thinking and Principles Theory
+                  </h3>
+
+                  <div class="card-meta wrapper">
+
+                    <p class="title-sm">
+                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">2 Lessons</span>
+                    </p>
+
+                    <p class="title-sm">
+                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">4k Students</span>
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <a href="#" class="layer-link"
+                  aria-label="Course Details, Financial Security Thinking and Principles Theory"></a>
+
+              </div>
+            </li>
+
+            <li class="card-container">
+              <div class="card course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/course-5.png" width="370" height="248" loading="lazy"
+                    alt="Logo Design: From Concept to Presentation" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+
+                    <p class="title-lg card-price">Free</p>
+
+                    <div class="rating-wrapper">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                    </div>
+
+                  </div>
+
+                  <h3 class="title-lg card-title">
+                    Logo Design: From Concept to Presentation
+                  </h3>
+
+                  <div class="card-meta wrapper">
+
+                    <p class="title-sm">
+                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">2 Lessons</span>
+                    </p>
+
+                    <p class="title-sm">
+                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">4k Students</span>
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <a href="#" class="layer-link"
+                  aria-label="Course Details, Logo Design: From Concept to Presentation"></a>
+
+              </div>
+            </li>
+
+            <li class="card-container">
+              <div class="card course-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/course-6.png" width="370" height="248" loading="lazy"
+                    alt="Professional Ceramic Moulding for Beginners" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+
+                    <p class="title-lg card-price">$29.82</p>
+
+                    <div class="rating-wrapper">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                      <img src="./assets/images/star-fill.svg" width="16" height="16" loading="lazy" alt="">
+                    </div>
+
+                  </div>
+
+                  <h3 class="title-lg card-title">
+                    Professional Ceramic Moulding for Beginners
+                  </h3>
+
+                  <div class="card-meta wrapper">
+
+                    <p class="title-sm">
+                      <img src="./assets/images/file-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">2 Lessons</span>
+                    </p>
+
+                    <p class="title-sm">
+                      <img src="./assets/images/user-outline.svg" width="20" height="20" loading="lazy" alt="">
+
+                      <span class="span">4k Students</span>
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <a href="#" class="layer-link"
+                  aria-label="Course Details, Professional Ceramic Moulding for Beginners"></a>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">View All Courses</a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-labelledby="cta-label">
+        <div class="container">
+
+          <h2 class="headline-md section-title" id="cta-label">
+            Education Is About Creating Leaders For Tomorrow
+          </h2>
+
+          <a href="#" class="btn btn-tertiary">Register Today</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-footer.svg" width="145" height="27" alt="Youdemi home">
+          </a>
+
+          <p class="title-sm footer-text">
+            Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/facebook.svg" width="40" height="40" loading="lazy" alt="facebook">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/twitter.svg" width="40" height="40" loading="lazy" alt="twitter">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/pinterest.svg" width="40" height="40" loading="lazy" alt="pinterest">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/instagram.svg" width="40" height="40" loading="lazy" alt="instagram">
+              </a>
+            </li>
+
+          </ul>
+
         </div>
 
-        <div class="box">
-            <h3 class="title">standard</h3>
-            <div class="price">$15<span>/monthly</span></div>
-            <ul>
-                <li> <i class="fas fa-check"></i> 1000+ downloads </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-times"></i> 5 downloads </li>
+        <ul class="footer-list">
+
+          <li>
+            <p class="headline-sm footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Pricing</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="headline-sm footer-list-title">Legal</p>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Legal</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Tearms of Use</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Tearm & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Payment Method</a>
+          </li>
+
+          <li>
+            <a href="#" class="title-sm footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+
+            <p class="headline-sm footer-list-title">Instagram Post</p>
+
+            <ul class="grid-list">
+
+              <li>
+                <img src="./assets/images/ins-1.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-2.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-3.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-4.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-5.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
+              <li>
+                <img src="./assets/images/ins-6.png" width="80" height="80" loading="lazy" alt="instagram post"
+                  class="img-cover">
+              </li>
+
             </ul>
-            <a href="#" class="btn">check out</a>
-        </div>
 
-        <div class="box">
-            <h3 class="title">premium</h3>
-            <div class="price">$25<span>/monthly</span></div>
-            <ul>
-                <li> <i class="fas fa-check"></i> 1000+ downloads </li>
-                <li> <i class="fas fa-check"></i> No transaction fees </li>
-                <li> <i class="fas fa-check"></i> unlimited storage </li>
-                <li> <i class="fas fa-check"></i> 5 downloads </li>
-            </ul>
-            <a href="#" class="btn">check out</a>
-        </div>
+          </li>
 
+        </ul>
+
+      </div>
     </div>
-
-</section>
-
-<!-- pricing section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-    <div class="image">
-        <img src="images/contact-img.png" alt="">
-    </div>
-
-    <form action="">
-
-        <h1 class="heading">fale conosco</h1>
-
-        <div class="inputBox">
-            <input type="text" required>
-            <label>nome</label>
-        </div>
-
-        <div class="inputBox">
-            <input type="email" required>
-            <label>email</label>
-        </div>
-
-        <div class="inputBox">
-            <input type="number" required>
-            <label>tel.</label>
-        </div>
-
-        <div class="inputBox">
-            <textarea required name="" id="" cols="30" rows="10"></textarea>
-            <label>mensagem</label>
-        </div>
-
-        <input type="submit" class="btn" value="enviar">
-
-    </form>
-
-</section>
-
-<!-- contact section edns -->
-
-<!-- footer section starts  -->
-
-<div class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>sobre nós</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto ad tempora blanditiis quo aliquid inventore a.</p>
-        </div>
-
-        <div class="box">
-            <h3>Voltar para...</h3>
-            <a href="#">Início</a>
-            <a href="#">Cardápio</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Comentários</a>
-            <a href="#">Preços</a>
-            <a href="#">Fale Conosco</a>
-        </div>
-
-        <div class="box">
-            <h3>siga-nos</h3>
-            <a href="#">facebook</a>
-            <a href="#">instagram</a>
-            <a href="#">pinterest</a>
-            <a href="#">whatsapp</a>
-        </div>
-
-        <div class="box">
-            <h3>contact info</h3>
-            <div class="info">
-                <i class="fas fa-phone"></i>
-                <p> +123-456-7890 <br> +111-2222-333 </p>
-            </div>
-            <div class="info">
-                <i class="fas fa-envelope"></i>
-                <p> pingodoce@gmail.com <br> pingodoce@gmail.com </p>
-            </div>
-            <div class="info">
-                <i class="fas fa-map-marker-alt"></i>
-                <p> são paulo, brasil - (14) 01234 - 5678 </p>
-            </div>
-        </div>
-
-    </div>
+  
+  
+  
+  
   
       <div class="container">
         <p class="copyright-text">
